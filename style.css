@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, a {
+    color: #3F5D45;
+    text-decoration: none;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 220px;
+    height: 40px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/student-week1/logo-all-dark.svg");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header li a {
+    padding: 10px 30px 8px 30px;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.banner {
+    display: block;
+    width: 940px;
+    height: 496px;
+    margin-bottom: 60px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.sidebar {
+    width: 300px;
+    font-size: 24px;
+}
+
+.sidebar li {
+    border: 1px solid #EAF0ED;
+    text-align: center;
+}
+
+.sidebar h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #3F5D45 0% 0% no-repeat padding-box;
+    font: normal normal 600 24px/40px PingFang TC;
+    color: #FFFFFF;
+    line-height: 1;
+}
+
+.sidebar a{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: normal normal 600 24px PingFang TC;
+    line-height: 1;
+}
+
+.acitve-item {
+    background: #EAF0ED 0% 0% no-repeat padding-box;
+}
+
+.product-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 640px
+}
+
+.product {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: content-box;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-photo {
+    display: block;
+    width: 300px;
+    height: 315px;
+}
+
+.icon-favorite {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 18px;
+    display: block;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true");
+}
+
+.product-tag {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    padding: 16px 10px;
+    font: normal normal 600 16px/20px PingFang TC;
+    writing-mode: vertical-lr;
+    background: #3F5D45 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-info h3 {
+    width: 50%;
+    text-align: center;
+    font: normal normal 600 20px/24px PingFang TC;
+    border: 1px solid #EAF0ED;
+    line-height: 1;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-sizing: content-box;
+}
+
+.product button {
+    display: block;
+    height: 65px;
+    background: #EAF0ED 0% 0% no-repeat padding-box;
+    color: #3F5D45;
+    font: normal normal 600 24px/20px PingFang TC;
+    border: 0;
+    cursor: pointer;
+}
+
+.page {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page a {
+    display: block;
+    width: 60px;
+    border: 1px solid #EAF0ED;
+    font: normal normal 300 20px/20px PingFang TC;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page .link:hover {
+    background: #3F5D45;
+    color: #EAF0ED;
+}
